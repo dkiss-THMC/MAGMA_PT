@@ -1,7 +1,7 @@
 # MAGMA_PT
 A collection of pseudo-transient Julia codes to model magmatic processes.
 
-All dependencies (MAT v0.10.2, Pallelstencil v0.5.6 and Plots v1.21.3) are included in the Project.toml.
+All dependencies (MAT v0.10.2, Parallelstencil v0.5.6 and Plots v1.21.3) are included in the Project.toml.
 
 If you do not have an NVidia GPU you can run the code by setting USE_GPU = false. For tips on optimal parallel performance see the [ParallelStencil.jl](https://github.com/omlins/ParallelStencil.jl) package.  
 
