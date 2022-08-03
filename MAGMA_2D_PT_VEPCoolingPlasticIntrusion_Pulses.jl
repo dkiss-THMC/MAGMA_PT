@@ -55,13 +55,13 @@ using Plots, Printf, Statistics, LinearAlgebra, MAT
     Soft_R    = Cm_R*0                          # Cohesion softening parameter, dC/dgamma, Pa
     C_min_R   = 1e6                             # minimum cohesion, Pa
     # Intrusion parameters, extend the arrays to add more intrusion events
-    xO_R = [ 0.0  ]                    # x coordinate of center, m
-    yO_R = [-5.0e3]                    # y coordinate of center, m
-    rx_R = [ 1.5e3]                    # horizontal semi axis, m
-    ry_R = [ 1.5e3]                    # vertical semi axis, m
-    px_R = [ 2.0  ]                    # power of the x term, []
-    py_R = [ 2.0  ]                    # power of the y term, []
-    tI_R = [ 0.0  ]*(365.25*24*3600)   # time of injection (must start with 0.0), s
+    xO_R = [ 0.0   -1e3    1e3     0.0  ]                    # x coordinate of center, m
+    yO_R = [-5.0e3 -5e3   -4.5e3  -5.5e3]                    # y coordinate of center, m
+    rx_R = [ 1.5e3  1.0e3  0.5e3   1.5e3]                    # horizontal semi axis, m
+    ry_R = [ 1.5e3  0.5e3  1.0e3   1.0e3]                    # vertical semi axis, m
+    px_R = [ 2.0    2.0    2.0     2.0  ]                    # power of the x term, []
+    py_R = [ 2.0    2.0    2.0     2.0  ]                    # power of the y term, []
+    tI_R = [ 0.0    2.0    5e3     1e4  ]*(365.25*24*3600)   # time of injection (must start with 0.0), s
     # independent scales
     ηsc       = 1e23                           # characteristic viscosity
     Ksc       = λ_R/ρRock_R/Cp_R               # characteristic viscosity
@@ -162,7 +162,7 @@ using Plots, Printf, Statistics, LinearAlgebra, MAT
     relpl     = 0.5             # Duvaut-Lyons relaxation factor for plasticity
     η_vpl     = 0.0/ηsc         # viscosity for Prezyna's regularization
     ndiff     = 8               # number of smoothing steps applied to the cohesion field
-    nTini     = 0               # number of smoothing steps applied on the initial T field 
+    nTini     = 200             # number of smoothing steps applied on the initial T field 
     # Path
     ENV["GKSwstype"]="nul"; 
     PathToVisu = "/EnterGlobalPathToExistingDirectory/";  # Enter global path to the directory where visualisation is to be stored
