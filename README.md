@@ -12,14 +12,22 @@ Open Julia in the project directory, or navigate there using `cd("Path/To/Projec
 ```julia
 julia> ] 
 pkg> activate .
-pkg> instantiate
 ```
 Press backspace to leave the package manager.
 
-Before running the code you must provide a path to a directory where output figures and data will be saved. Open `MAGMA_2D_PT_VEPCoolingPlasticIntrusion.jl` in your favorite editor and change `PathToVisu` and `PathToData`.
-Then you can run the code by the `include("MAGMA_2D_PT_VEPCoolingPlasticIntrusion.jl")` command.
+Before running the code you must provide a path to a directory where output figures and data will be saved. Open `MAGMA_2D_PT_VEPCoolingPlasticIntrusion.jl` in your favorite editor (such as Visual Studio Code) and change `PathToVisu` and `PathToData`.
+
+Next, you can run the reference model with (after having created a directory for the output):
+```julia
+julia> include("MAGMA_2D_PT_VEPCoolingPlasticIntrusion.jl")
+```
 
 
 The visualization included here serves monitoring reasons only, the output data contained in the `.mat` files can be post-processed in Matlab.
 
+## Publication
+The scripts here form part of a submitted manuscript:
+- Kiss D., Moulas E., Kaus B.J.P., Spang A. (2022, submitted) Thermal stresses result in rapid decompression and the development of fracture networks around magmatic intrusions in the visco-elasto-plastic upper crust. *Journal of Geophysical Research*
+
+## Funding
 The development of these codes was funded by the European Research Council through Consolidator Grant #771143 (MAGMA).
