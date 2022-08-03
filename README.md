@@ -3,7 +3,7 @@ A collection of pseudo-transient Julia codes to model magmatic processes.
 
 
 ## Running the reference model
-Open Julia in the project directory, or navigate there using `cd("Path/To/Project")`. Then with the following commands you can dowload all dependencies (listed in the `Project.toml`)
+Open Julia in the project directory, or navigate there using `cd("Path/To/Project")`. Then with the following commands you can dowload all dependencies (listed in Project.toml)
 ```julia
 julia> ] 
 pkg> activate .
