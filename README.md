@@ -19,6 +19,7 @@ Before running the code you must provide a path to a directory where output figu
 
 Next, you can run the reference model with (after having created a directory for the output):
 ```julia
+julia> using MAGMA_PT
 julia> include("MAGMA_2D_PT_VEPCoolingPlasticIntrusion.jl")
 ```
 
