@@ -19,7 +19,7 @@ julia> using MAGMA_PT
 julia> include("MAGMA_2D_PT_VEPCoolingPlasticIntrusion.jl")
 ```
 
-The visualization included here serves monitoring reasons only, the output data contained in the `.mat` files can be post-processed in Matlab.
+The visualization included here serves monitoring purposes only, the output data contained in the `.mat` files can be post-processed in Matlab.
 
 In the current version of `MAGMA_2D_PT_VEPCoolingPlasticIntrusion.jl`, plastic yielding can be switched off by choosing a very large value for `Cm_R` (e.g. 1e9 Pa). An inviscid solution can be obtained by increasing `Adis_R` (e.g. 1 Pa s). Constant viscosity can be enabled by replacing the `compute_eta!()` kernels by the `const_eta!()` and `const_etac!()`. Constant viscosity in the matrix and in the inclusion can be defined by `eta_const_R` and `eta_inc_R`. 
 
