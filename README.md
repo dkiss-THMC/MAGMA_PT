@@ -25,7 +25,7 @@ In the current version of `MAGMA_2D_PT_VEPCoolingPlasticIntrusion.jl`, plastic y
 
 ## Publication
 The scripts here form part of a submitted manuscript:
-- Kiss D., Moulas E., Kaus B.J.P., Spang A. (2022, submitted) Thermal stresses result in rapid decompression and the development of fracture networks around magmatic intrusions in the visco-elasto-plastic upper crust. *Journal of Geophysical Research*
+- Kiss, D., Moulas, E., Kaus, B. J., & Spang, A. (2023). Decompression and fracturing caused by magmatically induced thermal stresses. Journal of Geophysical Research: Solid Earth, 128(3), e2022JB025341.
 
 ## Funding
 The development of these codes was funded by the European Research Council through Consolidator Grant #771143 (MAGMA).
