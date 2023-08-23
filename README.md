@@ -24,7 +24,7 @@ The visualization included here serves monitoring purposes only, the output data
 In the current version of `MAGMA_2D_PT_VEPCoolingPlasticIntrusion.jl`, plastic yielding can be switched off by choosing a very large value for `Cm_R` (e.g. 1e9 Pa). An inviscid solution can be obtained by increasing `Adis_R` (e.g. 1 Pa s). Constant viscosity can be enabled by replacing the `compute_eta!()` kernels by the `const_eta!()` and `const_etac!()`. Constant viscosity in the matrix and in the inclusion can be defined by `eta_const_R` and `eta_inc_R`. 
 
 ## Publication
-The scripts here form part of a submitted manuscript:
+The scripts here form part of a research article:
 - Kiss, D., Moulas, E., Kaus, B. J., & Spang, A. (2023). Decompression and fracturing caused by magmatically induced thermal stresses. Journal of Geophysical Research: Solid Earth, 128(3), e2022JB025341.
 
 ## Funding
